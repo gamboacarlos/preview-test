@@ -1,0 +1,14 @@
+@import '../../globalStyles/variables.scss';
+
+.containerWrapper {
+  margin: 0 auto;
+  max-width: 1020px;
+  min-height: 100vh;
+  width: 100%;
+  padding: 16px 6px;
+  overflow: hidden;
+
+  @include mobile() {
+    padding: 16px 0;
+  }
+}

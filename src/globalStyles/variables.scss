@@ -1,0 +1,20 @@
+// Colors ============================================================
+$darkGreen1: #0e1210;
+$darkGreen2: #182420;
+$green: #0f4d2f;
+$lightGreen: #00d4f0;
+$gray1: #596e5f;
+$gray2: #c0d8cb;
+$white: #e3f4e7;
+
+// Breakpoints =======================================================
+@mixin tablet() {
+  @media (max-width: 1023px) {
+    @content;
+  }
+}
+@mixin mobile() {
+  @media (max-width: 767px) {
+    @content;
+  }
+}
