@@ -18,5 +18,6 @@ module.exports = {
   rules: {
     'react/react-in-jsx-scope': 'off',
     '@typescript-eslint/triple-slash-reference': 'off',
+    '@typescript-eslint/no-floating-promises': 'off',
   },
 }

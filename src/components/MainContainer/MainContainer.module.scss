@@ -5,10 +5,10 @@
   max-width: 1020px;
   min-height: 100vh;
   width: 100%;
-  padding: 16px 6px;
+  padding: 60px 40px;
   overflow: hidden;
 
   @include mobile() {
-    padding: 16px 0;
+    padding: 60px 0;
   }
 }

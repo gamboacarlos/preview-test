@@ -1,12 +1,12 @@
-import React, { FC } from 'react'
-import Heading from '../components/Heading/Heading'
-import MainContainer from '../components/MainContainer/MainContainer'
+import { FC } from 'react'
+import CharactersList from '../components/CharactersList/CharactersList'
+import Layout from '../components/Layout/Layout'
 
 const HomeView: FC = () => {
   return (
-    <MainContainer>
-      <Heading>Container ready</Heading>
-    </MainContainer>
+    <Layout>
+      <CharactersList />
+    </Layout>
   )
 }
 

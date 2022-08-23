@@ -2,19 +2,19 @@
 $darkGreen1: #0e1210;
 $darkGreen2: #182420;
 $green: #0f4d2f;
-$lightGreen: #00d4f0;
+$lightGreen: #00f070;
 $gray1: #596e5f;
-$gray2: #c0d8cb;
-$white: #e3f4e7;
+$gray2: #d8e5de;
+$white: #f6fff8;
 
 // Breakpoints =======================================================
 @mixin tablet() {
-  @media (max-width: 1023px) {
+  @media (max-width: 760px) {
     @content;
   }
 }
 @mixin mobile() {
-  @media (max-width: 767px) {
+  @media (max-width: 560px) {
     @content;
   }
 }
