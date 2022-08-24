@@ -2,7 +2,7 @@ import * as actionTypes from './actionTypes'
 import * as reducerTypes from '../../types/reducerTypes'
 import { CharacterData } from '../../types/commonTypes'
 
-// Start characters data fetch ====================================================
+// Start characters data fetch =====================================================
 export const startDataFetch = (): reducerTypes.ActionStartDataFetch => {
   return {
     type: actionTypes.START_DATA_FETCH,
@@ -10,7 +10,7 @@ export const startDataFetch = (): reducerTypes.ActionStartDataFetch => {
   }
 }
 
-// Set all characters data ========================================================
+// Set all characters data =========================================================
 export const setCharactersData = (
   data: CharacterData[]
 ): reducerTypes.ActionSetAllCharacters => {
@@ -20,7 +20,7 @@ export const setCharactersData = (
   }
 }
 
-// Set current characters data ========================================================
+// Set current characters data =====================================================
 export const setCurrentCharacterData = (
   data: CharacterData
 ): reducerTypes.ActionSetCurrentCharacterData => {
@@ -30,7 +30,7 @@ export const setCurrentCharacterData = (
   }
 }
 
-// Set current characters data ========================================================
+// Start specific character data fetch =============================================
 export const startSpecificCharacterFetch = (
   char: number
 ): reducerTypes.ActionStartSpecificCharacterFetch => {
@@ -40,7 +40,17 @@ export const startSpecificCharacterFetch = (
   }
 }
 
-// Set loading ============================================================
+// Set character quote ==============================================================
+export const setCharacterQuote = (
+  quote: string
+): reducerTypes.ActionSetCharacterQuote => {
+  return {
+    type: actionTypes.SET_CHARACTER_QUOTE,
+    payload: quote,
+  }
+}
+
+// Set loading =====================================================================
 export const setLoading = (loading: boolean): reducerTypes.ActionSetLoading => {
   return {
     type: actionTypes.SET_LOADING,
@@ -48,7 +58,7 @@ export const setLoading = (loading: boolean): reducerTypes.ActionSetLoading => {
   }
 }
 
-// Set current page ==========================================================
+// Set current page ================================================================
 export const setCurrentPage = (
   page: number
 ): reducerTypes.ActionSetCurrentPage => {
@@ -58,7 +68,7 @@ export const setCurrentPage = (
   }
 }
 
-// Set current offset ==========================================================
+// Set current offset ==============================================================
 export const setCurrentOffset = (
   offset: number
 ): reducerTypes.ActionSetCurrentOffset => {
@@ -68,7 +78,7 @@ export const setCurrentOffset = (
   }
 }
 
-// Set current language ==========================================================
+// Set current language ============================================================
 export const setCurrentLanguage = (
   lang: string
 ): reducerTypes.ActionSetCurrentLanguage => {

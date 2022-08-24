@@ -81,7 +81,7 @@ npm run dev
   "scripts": {
     ...
     "test": "jest",
-    "test:watch": "yarn test -- --watch",
+    "test:watch": "npm test -- --watch",
     "lint": "eslint src/**/*.{ts,tsx}"
   },
 ```

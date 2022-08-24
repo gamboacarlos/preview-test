@@ -9,6 +9,7 @@ export interface CharacterData {
   appearance: number[]
   portrayed: string
   category: string
+  better_call_saul_appearance: number[]
 }
 export interface CardCharacterData {
   char_id: number
@@ -22,5 +23,13 @@ export interface CharacterQuote {
   quote: string
   author: string
   series: string
+}
+export interface CharacterInfoProps {
+  character: CharacterData
+  quote: string
+}
+export interface CharacterListProps {
+  characters: CardCharacterData[]
+  loading: boolean
 }
 export type AllDataAvailable = CharacterData | CharacterData[] | CharacterQuote

@@ -1,6 +1,6 @@
 // Colors ============================================================
 $darkGreen1: #0e1210;
-$darkGreen2: #182420;
+$darkGreen2: #1f2724;
 $green: #0f4d2f;
 $lightGreen: #00f070;
 $gray1: #596e5f;
@@ -20,12 +20,12 @@ $white: #f6fff8;
 }
 // Mixins ============================================================
 @mixin langButton() {
-  padding: 8px 14px;
+  padding: 4px 10px;
   color: $white;
   border-radius: 20px;
   border-style: none;
   cursor: pointer;
-  font-size: 12px;
+  font-size: 10px;
   font-weight: 500;
   margin: 2px;
 }

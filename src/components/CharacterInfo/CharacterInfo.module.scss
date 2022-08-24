@@ -1,0 +1,62 @@
+@import '../../globalStyles/variables.scss';
+
+.infoWrapper {
+  width: 100%;
+  height: 600px;
+  display: flex;
+  flex-direction: row;
+  border: 1px solid $gray2;
+  margin-top: 20px;
+
+  @include tablet() {
+    flex-direction: column;
+    height: auto;
+  }
+}
+.infoImage {
+  width: 45%;
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+
+  img {
+    width: 100%;
+    object-fit: cover;
+  }
+
+  @include tablet() {
+    width: 100%;
+    height: auto;
+  }
+}
+.infoBody {
+  width: 55%;
+  height: 100%;
+  padding: 20px;
+  background-color: white;
+  color: $darkGreen2;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 5px;
+
+  @include tablet() {
+    width: 100%;
+    height: auto;
+  }
+}
+.occupationInfo {
+  text-align: left;
+}
+.infoQuote {
+  width: 100%;
+  padding: 20px;
+  background-color: $green;
+  color: $white;
+  border-radius: 12px;
+  margin-top: 20px;
+  span {
+    font-style: italic;
+  }
+}

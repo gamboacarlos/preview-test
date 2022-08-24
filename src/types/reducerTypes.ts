@@ -1,11 +1,11 @@
-import { CharacterData, CharacterQuote } from './commonTypes'
+import { CharacterData } from './commonTypes'
 
 // State interfaces =====================================================
 export interface AppState {
   loading: boolean
   characters: CharacterData[]
-  currentCharacter: CharacterData[]
-  quote: CharacterQuote[]
+  currentCharacter: Partial<CharacterData>
+  quote: string
   currentPage: number
   currentOffset: number
   currentLanguage: string
@@ -44,6 +44,10 @@ export interface ActionSetCurrentLanguage {
   type: string
   payload: string
 }
+export interface ActionSetCharacterQuote {
+  type: string
+  payload: string
+}
 export type AppReducerActions =
   | ActionSetAllCharacters
   | ActionStartDataFetch
@@ -53,3 +57,4 @@ export type AppReducerActions =
   | ActionSetCurrentLanguage
   | ActionSetCurrentCharacterData
   | ActionStartSpecificCharacterFetch
+  | ActionSetCharacterQuote

@@ -17,4 +17,12 @@ html {
   background-color: $white;
   color: $darkGreen2;
   font-family: 'Inter', sans-serif, Arial;
+
+  p {
+    font-weight: 500;
+  }
+
+  span {
+    font-weight: 300;
+  }
 }

@@ -6,8 +6,8 @@ import { CharacterData } from '../../types/commonTypes'
 const initialState: reducerTypes.AppState = {
   loading: false,
   characters: [],
-  currentCharacter: [],
-  quote: [],
+  currentCharacter: {},
+  quote: '',
   currentPage: 1,
   currentOffset: 0,
   currentLanguage: 'en',
@@ -27,13 +27,15 @@ const appReducer = (
       return {
         ...state,
         characters: [...(action.payload as CharacterData[])],
-        currentCharacter: [],
+        currentCharacter: {},
       }
     case actionTypes.SET_CURRENT_CHARACTER_DATA:
       return {
         ...state,
-        currentCharacter: [...(action.payload as CharacterData[])],
+        currentCharacter: { ...(action.payload as CharacterData) },
       }
+    case actionTypes.SET_CHARACTER_QUOTE:
+      return { ...state, quote: action.payload as string }
     case actionTypes.SET_CURRENT_PAGE:
       return { ...state, currentPage: action.payload as number }
     case actionTypes.SET_CURRENT_OFFSET:

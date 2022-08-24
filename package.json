@@ -8,7 +8,7 @@
     "build": "tsc && vite build",
     "preview": "vite preview",
     "test": "jest",
-    "test:watch": "yarn test -- --watch",
+    "test:watch": "npm test -- --watch",
     "lint": "eslint src/**/*.{ts,tsx}"
   },
   "dependencies": {

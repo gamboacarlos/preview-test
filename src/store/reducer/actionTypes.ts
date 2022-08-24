@@ -1,5 +1,6 @@
 export const START_DATA_FETCH: string = 'START_DATA_FETCH'
 export const SET_CHARACTERS_DATA: string = 'SET_CHARACTERS_DATA'
+export const SET_CHARACTER_QUOTE: string = 'SET_CHARACTER_QUOTE'
 export const SET_LOADING: string = 'SET_LOADING'
 export const SET_CURRENT_PAGE: string = 'SET_CURRENT_PAGE'
 export const SET_CURRENT_OFFSET: string = 'SET_CURRENT_OFFSET'

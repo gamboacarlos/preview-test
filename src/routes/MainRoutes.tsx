@@ -8,7 +8,7 @@ const MainRoutes: FC = () => {
     <Router>
       <Routes>
         <Route path="/" element={<HomeView />} />
-        <Route path="character/:name" element={<CharacterView />} />
+        <Route path="character/:id" element={<CharacterView />} />
       </Routes>
     </Router>
   )
