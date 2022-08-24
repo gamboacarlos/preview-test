@@ -7,6 +7,9 @@
     "status": "Estatus: ",
     "nickname": "Apodo: ",
     "appearance": "Apariciones (temporadas): ",
-    "portrayed": "Actuado por: "
+    "portrayed": "Actuado por: ",
+    "bcsAppearance": "Apariciones en Better Call Saul (temporadas): ",
+    "category": "Categoria: ",
+    "quote": "Frase: "
   }
 }

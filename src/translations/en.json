@@ -7,6 +7,9 @@
     "status": "Status: ",
     "nickname": "Nickname: ",
     "appearance": "Appearance (seasons): ",
-    "portrayed": "Played by: "
+    "portrayed": "Played by: ",
+    "bcsAppearance": "Better Call Saul appearance (seasons): ",
+    "category": "Category: ",
+    "quote": "Quote: "
   }
 }

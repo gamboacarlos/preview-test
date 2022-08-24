@@ -1,12 +1,10 @@
 import { FC } from 'react'
 import { Link } from 'react-router-dom'
 import useAppReducer from '../../hooks/useAppReducer'
-// import { useNavigate } from 'react-router-dom'
 import styles from './NavBar.module.scss'
 
 const NavBar: FC = () => {
   // Hooks ===========================================================================
-  //   const navigate = useNavigate()
   const { currentLanguage, handleChangeLanguage } = useAppReducer()
 
   return (

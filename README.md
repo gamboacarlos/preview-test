@@ -93,4 +93,10 @@ npm run dev
 > Creo el store de la aplicacion con un único reducer y las sagas correspondientes, he creado tambien un custom hook (useAppReducer) para despachar acciones y obtener lod datos del estado de una manera mas centralizada y manteniendo los componentes mas compactos y faciles de leer.
 
 > 23/08/2022</br>
-> Inicio la instalación de i18next para manejar el idioma de la aplicación. El idioma podra ser cambiado manualmente entre ingles y español desde la parte derecha del NavBar.
+> Decido añadir paginación a la vista principal para poder tener disponible todos los personajes sin tener que hacer un solo fetch tan pesado que comprometa el rendimiento de la app y generar asi una mejor experiencia de usuario, tambien creo una animación de carga que se mostrara mientras los elementos aun no esten disponibles.
+
+> 23/08/2022</br>
+> Inicio la instalación y configuración de i18next para manejar el idioma de la aplicación. El idioma podra ser cambiado manualmente entre ingles y español desde la parte derecha del NavBar.
+
+> 24/08/2022</br>
+> Inicio la refactorización en base a los tests creados.

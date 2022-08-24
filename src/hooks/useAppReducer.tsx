@@ -3,6 +3,7 @@ import {
   setCurrentLanguage,
   setCurrentOffset,
   setCurrentPage,
+  setLoading,
   startDataFetch,
   startSpecificCharacterFetch,
 } from '../store/reducer/app.actions'
@@ -49,6 +50,11 @@ const useAppReducer = () => {
     dispatch(startSpecificCharacterFetch(char))
   }
 
+  // Handle set loading ===============================================================
+  const handleSetLoading = (loading: boolean) => {
+    dispatch(setLoading(loading))
+  }
+
   return {
     loading,
     quote,
@@ -62,6 +68,7 @@ const useAppReducer = () => {
     handlePreviousPage,
     handleChangeLanguage,
     handleStartSpecificCharacterFetch,
+    handleSetLoading,
   }
 }
 
