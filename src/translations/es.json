@@ -1,0 +1,12 @@
+{
+  "characterInfo": {
+    "id": "Numero ID: ",
+    "name": "Nombre: ",
+    "birthday": "Nacimiento: ",
+    "occupation": "Ocupación: ",
+    "status": "Estatus: ",
+    "nickname": "Apodo: ",
+    "appearance": "Apariciones (temporadas): ",
+    "portrayed": "Actuado por: "
+  }
+}
