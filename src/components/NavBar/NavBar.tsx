@@ -21,6 +21,7 @@ const NavBar: FC = () => {
         </Link>
         <div>
           <button
+            data-testid="lang-button-es"
             className={
               currentLanguage === 'es'
                 ? styles.languageButtonDisabled
@@ -31,6 +32,7 @@ const NavBar: FC = () => {
             Spanish
           </button>
           <button
+            data-testid="lang-button-en"
             className={
               currentLanguage === 'en'
                 ? styles.languageButtonDisabled

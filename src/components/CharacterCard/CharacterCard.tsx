@@ -25,11 +25,11 @@ const CharacterCard: FC<CardCharacterData> = ({
           <div className={styles.characterName}>
             <h3 data-testid="char-name">{name}</h3>
           </div>
-          <p>
+          <p data-testid="card-nickname">
             {t('characterInfo.nickname')}
             <span data-testid="char-nickname">{nickname}</span>
           </p>
-          <p>
+          <p data-testid="card-status">
             {t('characterInfo.status')}
             <span data-testid="char-status">{status}</span>
           </p>

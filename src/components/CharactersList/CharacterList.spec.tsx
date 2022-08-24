@@ -1,16 +1,16 @@
 import { render, screen } from '@testing-library/react'
 import '@testing-library/jest-dom'
+import CharactersList from './CharactersList'
 import {
   characterListMockData,
   StoreWrapper,
 } from '../../helpers/testingHelpers'
-import CharactersList from './CharactersList'
 
 // Test ============================================================================
 test('CharacterList is rendering all passed elements', () => {
   render(
     <CharactersList characters={characterListMockData} loading={false} />,
-    { wrapper: StoreWrapper } // Connection to store
+    { wrapper: StoreWrapper }
   )
   const list = screen.getAllByTestId('char-card')
   expect(list.length).toEqual(6)
@@ -20,9 +20,8 @@ test('CharacterList is rendering all passed elements', () => {
 test('CharacterList is rendering cards with the passed names correctly', () => {
   const { getAllByTestId } = render(
     <CharactersList characters={characterListMockData} loading={false} />,
-    { wrapper: StoreWrapper } // Connection to store
+    { wrapper: StoreWrapper }
   )
-
   // Get all displayed card names
   const cardsNames = getAllByTestId('char-name').map((char) => char.textContent)
   // Get all data names
@@ -33,10 +32,9 @@ test('CharacterList is rendering cards with the passed names correctly', () => {
 
 // Test ============================================================================
 test('LoadingScreen is rendering when loading is true', () => {
-  render(
-    <CharactersList characters={characterListMockData} loading={true} />,
-    { wrapper: StoreWrapper } // Connection to store
-  )
+  render(<CharactersList characters={characterListMockData} loading={true} />, {
+    wrapper: StoreWrapper,
+  })
   const loadScreen = screen.getByTestId('loading-screen')
   expect(loadScreen).toBeInTheDocument()
 })

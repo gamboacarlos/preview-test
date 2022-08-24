@@ -10,7 +10,7 @@ import {
 test('CharacterCard is displaying the passed data properly', () => {
   const { getByRole, getByTestId } = render(
     <CharacterCard {...singleCharacterMockData} />,
-    { wrapper: StoreWrapper } // Connection to store
+    { wrapper: StoreWrapper }
   )
   const cardName = getByRole('heading')
   const cardNickname = getByTestId('char-nickname')

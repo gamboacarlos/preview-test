@@ -16,6 +16,7 @@ const Paginator: FC = () => {
   return (
     <div className={styles.paginatorWrapper}>
       <button
+        data-testid="back-button"
         className={styles.paginatorNavigatorButton}
         disabled={currentOffset === 0}
         onClick={handlePreviousPage}
@@ -25,8 +26,9 @@ const Paginator: FC = () => {
           size="40px"
         />
       </button>
-      <p>{currentPage}</p>
+      <p data-testid="current-page">{currentPage}</p>
       <button
+        data-testid="foward-button"
         className={styles.paginatorNavigatorButton}
         disabled={characters.length < 6}
         onClick={handleNextPage}

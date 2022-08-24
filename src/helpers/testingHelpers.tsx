@@ -4,6 +4,7 @@ import { BrowserRouter as Router } from 'react-router-dom'
 import { FC, ReactNode } from 'react'
 import appReducer from '../store/reducer/app.reducer'
 import '../i18n'
+import '../globalStyles/main.scss'
 
 export const store = createStore(appReducer)
 
@@ -13,6 +14,9 @@ export const StoreWrapper: FC<{ children: ReactNode }> = ({ children }) => (
     <Provider store={store}>{children}</Provider>
   </Router>
 )
+
+// Mock data ============================================================================
+export const mockQuote = 'Yeah, totally Kafkaesque'
 
 export const singleCharacterMockData = {
   char_id: 1,
@@ -24,6 +28,7 @@ export const singleCharacterMockData = {
   appearance: [1, 2, 3, 4, 5],
   nickname: 'Heisenberg',
   portrayed: 'Bryan Cranston',
+  category: 'Breaking Bad',
   better_call_saul_appearance: [],
 }
 

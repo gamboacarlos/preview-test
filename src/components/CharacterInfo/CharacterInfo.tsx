@@ -29,46 +29,49 @@ const CharacterInfo: FC<CharacterInfoProps> = ({ character, quote }) => {
         <img src={img} alt={name} />
       </div>
       <div className={styles.infoBody}>
-        <h2>{name}</h2>
+        <h2 data-testid="info-name">{name}</h2>
         <p>
           {t('characterInfo.nickname')}
-          <span>{`${nickname}.`}</span>
+          <span>{nickname}</span>
         </p>
         <p>
           {t('characterInfo.id')}
-          <span>{`${id}.`}</span>
+          <span>{id}</span>
         </p>
         <p>
-          {t('characterInfo.birthday')} <span>{`${birthday}.`}</span>
+          {t('characterInfo.birthday')} <span>{birthday}</span>
         </p>
         <div className={styles.occupationInfo}>
           <p>
             {t('characterInfo.occupation')}
-            <span>{`${formatInfoArray(occupation)}.`}</span>
+            <span>{formatInfoArray(occupation)}</span>
           </p>
         </div>
         <p>
-          {t('characterInfo.appearance')}{' '}
-          <span>{`${formatInfoArray(appearance)}.`}</span>
+          {t('characterInfo.appearance')}
+          <span>{formatInfoArray(appearance)}</span>
         </p>
         <p>
-          {t('characterInfo.status')} <span>{`${status}.`}</span>
+          {t('characterInfo.status')}
+          <span data-testid="info-status">{status}</span>
         </p>
         <p>
-          {t('characterInfo.portrayed')} <span>{`${portrayed}.`}</span>
+          {t('characterInfo.portrayed')} <span>{portrayed}</span>
         </p>
         <p>
-          {t('characterInfo.category')} <span>{`${category}.`}</span>
+          {t('characterInfo.category')}
+          <span data-testid="info-category">{category}</span>
         </p>
         {bcsAppearance.length >= 1 ? (
           <p>
-            {t('characterInfo.bcsAppearance')}{' '}
-            <span>{`${formatInfoArray(bcsAppearance)}.`}</span>
+            {t('characterInfo.bcsAppearance')}
+            <span>{formatInfoArray(bcsAppearance)}</span>
           </p>
         ) : null}
         <div className={styles.infoQuote}>
           <p>
-            {t('characterInfo.quote')} <span>{`"${quote}.."`}</span>
+            {t('characterInfo.quote')}{' '}
+            <span data-testid="info-quote">{quote}</span>
           </p>
         </div>
       </div>
