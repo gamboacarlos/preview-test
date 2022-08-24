@@ -31,6 +31,7 @@ npm run dev
 - [Jest](https://jestjs.io/es-ES/)
 - [React Testing Library](https://testing-library.com/docs/react-testing-library/intro/)
 - [Sass](https://sass-lang.com/)
+- [i18next](https://www.i18next.com/)
 
 <br />
 
@@ -84,3 +85,12 @@ npm run dev
     "lint": "eslint src/**/*.{ts,tsx}"
   },
 ```
+
+> 23/08/2022</br>
+> Ya creada la vista principal de la aplicación defino su ruta en el componente MainRoutes haciendo uso de React Router.
+
+> 23/08/2022</br>
+> Creo el store de la aplicacion con un único reducer y las sagas correspondientes, he creado tambien un custom hook (useAppReducer) para despachar acciones y obtener lod datos del estado de una manera mas centralizada y manteniendo los componentes mas compactos y faciles de leer.
+
+> 23/08/2022</br>
+> Inicio la instalación de i18next para manejar el idioma de la aplicación. El idioma podra ser cambiado manualmente entre ingles y español desde la parte derecha del NavBar.
