@@ -18,3 +18,20 @@
   align-items: center;
   justify-content: space-between;
 }
+
+.languageButtonDisabled {
+  @include langButton();
+  background-color: $gray1;
+  color: $lightGreen;
+  pointer-events: none;
+  border: 1px solid $lightGreen;
+}
+.languageButtonEnabled {
+  @include langButton();
+  background-color: $green;
+}
+.logoButton {
+  background-color: transparent;
+  border-style: none;
+  cursor: pointer;
+}

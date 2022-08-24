@@ -18,3 +18,14 @@ $white: #f6fff8;
     @content;
   }
 }
+// Mixins ============================================================
+@mixin langButton() {
+  padding: 8px 14px;
+  color: $white;
+  border-radius: 20px;
+  border-style: none;
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: 500;
+  margin: 2px;
+}
