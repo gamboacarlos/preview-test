@@ -6,8 +6,8 @@ import NavBar from './NavBar'
 // Test ============================================================================
 test('NavBar is render his elements properly', () => {
   render(<NavBar />, { wrapper: StoreWrapper })
-  const englishLangButton = screen.getByTestId('lang-button-en')
   const spanishLangButton = screen.getByTestId('lang-button-es')
+  const englishLangButton = screen.getByTestId('lang-button-en')
 
   expect(spanishLangButton).toBeInTheDocument()
   expect(englishLangButton).toBeInTheDocument()

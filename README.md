@@ -35,7 +35,7 @@ npm run dev
 
 <br />
 
-## Memoria
+## Memorias
 
 > 22/08/2022</br>
 > Inicio el desarrollo de la aplicación, iniciando Git en el directorio raiz
@@ -108,7 +108,7 @@ npm run dev
 <pre>-------------------------------|---------|----------|---------|---------|---------------------------
 File                           | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s         
 -------------------------------|---------|----------|---------|---------|---------------------------
-<font color="#E9AD0C"><b>All files                     </b></font> | <font color="#E9AD0C"><b>  66.66</b></font> | <font color="#F66151"><b>   39.13</b></font> | <font color="#F66151"><b>   38.7</b></font> | <font color="#E9AD0C"><b>  66.66</b></font> | <font color="#F66151"><b>                         </b></font> 
+<font color="#E9AD0C"><b>All files                     </b></font> | <font color="#E9AD0C"><b>  68.68</b></font> | <font color="#F66151"><b>   39.13</b></font> | <font color="#F66151"><b>  44.11</b></font> | <font color="#E9AD0C"><b>  68.75</b></font> | <font color="#F66151"><b>                         </b></font> 
 <font color="#33D17A"><b> src                          </b></font> | <font color="#33D17A"><b>    100</b></font> | <font color="#33D17A"><b>     100</b></font> | <font color="#33D17A"><b>    100</b></font> | <font color="#33D17A"><b>    100</b></font> | <font color="#E9AD0C"><b>                         </b></font> 
 <font color="#33D17A"><b>  i18n.ts                     </b></font> | <font color="#33D17A"><b>    100</b></font> | <font color="#33D17A"><b>     100</b></font> | <font color="#33D17A"><b>    100</b></font> | <font color="#33D17A"><b>    100</b></font> | <font color="#E9AD0C"><b>                         </b></font> 
 <font color="#33D17A"><b> src/components/CharacterCard </b></font> | <font color="#33D17A"><b>     80</b></font> | <font color="#33D17A"><b>     100</b></font> | <font color="#E9AD0C"><b>     50</b></font> | <font color="#33D17A"><b>     80</b></font> | <font color="#F66151"><b>                         </b></font> 
@@ -117,8 +117,14 @@ File                           | % Stmts | % Branch | % Funcs | % Lines | Uncove
 <font color="#33D17A"><b>  CharacterInfo.tsx           </b></font> | <font color="#33D17A"><b>    100</b></font> | <font color="#E9AD0C"><b>      50</b></font> | <font color="#33D17A"><b>    100</b></font> | <font color="#33D17A"><b>    100</b></font> | <font color="#E9AD0C"><b>65                       </b></font> 
 <font color="#33D17A"><b> src/components/CharactersList</b></font> | <font color="#33D17A"><b>    100</b></font> | <font color="#33D17A"><b>     100</b></font> | <font color="#33D17A"><b>    100</b></font> | <font color="#33D17A"><b>    100</b></font> | <font color="#E9AD0C"><b>                         </b></font> 
 <font color="#33D17A"><b>  CharactersList.tsx          </b></font> | <font color="#33D17A"><b>    100</b></font> | <font color="#33D17A"><b>     100</b></font> | <font color="#33D17A"><b>    100</b></font> | <font color="#33D17A"><b>    100</b></font> | <font color="#E9AD0C"><b>                         </b></font> 
+<font color="#33D17A"><b> src/components/Footer        </b></font> | <font color="#33D17A"><b>    100</b></font> | <font color="#33D17A"><b>     100</b></font> | <font color="#33D17A"><b>    100</b></font> | <font color="#33D17A"><b>    100</b></font> | <font color="#E9AD0C"><b>                         </b></font> 
+<font color="#33D17A"><b>  Footer.tsx                  </b></font> | <font color="#33D17A"><b>    100</b></font> | <font color="#33D17A"><b>     100</b></font> | <font color="#33D17A"><b>    100</b></font> | <font color="#33D17A"><b>    100</b></font> | <font color="#E9AD0C"><b>                         </b></font> 
+<font color="#33D17A"><b> src/components/Layout        </b></font> | <font color="#33D17A"><b>    100</b></font> | <font color="#33D17A"><b>     100</b></font> | <font color="#33D17A"><b>    100</b></font> | <font color="#33D17A"><b>    100</b></font> | <font color="#E9AD0C"><b>                         </b></font> 
+<font color="#33D17A"><b>  Layout.tsx                  </b></font> | <font color="#33D17A"><b>    100</b></font> | <font color="#33D17A"><b>     100</b></font> | <font color="#33D17A"><b>    100</b></font> | <font color="#33D17A"><b>    100</b></font> | <font color="#E9AD0C"><b>                         </b></font> 
 <font color="#33D17A"><b> src/components/LoadingScreen </b></font> | <font color="#33D17A"><b>    100</b></font> | <font color="#33D17A"><b>     100</b></font> | <font color="#33D17A"><b>    100</b></font> | <font color="#33D17A"><b>    100</b></font> | <font color="#E9AD0C"><b>                         </b></font> 
 <font color="#33D17A"><b>  LoadingScreen.tsx           </b></font> | <font color="#33D17A"><b>    100</b></font> | <font color="#33D17A"><b>     100</b></font> | <font color="#33D17A"><b>    100</b></font> | <font color="#33D17A"><b>    100</b></font> | <font color="#E9AD0C"><b>                         </b></font> 
+<font color="#33D17A"><b> src/components/MainContainer </b></font> | <font color="#33D17A"><b>    100</b></font> | <font color="#33D17A"><b>     100</b></font> | <font color="#33D17A"><b>    100</b></font> | <font color="#33D17A"><b>    100</b></font> | <font color="#E9AD0C"><b>                         </b></font> 
+<font color="#33D17A"><b>  MainContainer.tsx           </b></font> | <font color="#33D17A"><b>    100</b></font> | <font color="#33D17A"><b>     100</b></font> | <font color="#33D17A"><b>    100</b></font> | <font color="#33D17A"><b>    100</b></font> | <font color="#E9AD0C"><b>                         </b></font> 
 <font color="#E9AD0C"><b> src/components/NavBar        </b></font> | <font color="#E9AD0C"><b>     60</b></font> | <font color="#E9AD0C"><b>      50</b></font> | <font color="#F66151"><b>  33.33</b></font> | <font color="#E9AD0C"><b>     60</b></font> | <font color="#F66151"><b>                         </b></font> 
 <font color="#E9AD0C"><b>  NavBar.tsx                  </b></font> | <font color="#E9AD0C"><b>     60</b></font> | <font color="#E9AD0C"><b>      50</b></font> | <font color="#F66151"><b>  33.33</b></font> | <font color="#E9AD0C"><b>     60</b></font> | <font color="#F66151"><b>30-41                    </b></font> 
 <font color="#33D17A"><b> src/components/Paginator     </b></font> | <font color="#33D17A"><b>    100</b></font> | <font color="#E9AD0C"><b>      50</b></font> | <font color="#33D17A"><b>    100</b></font> | <font color="#33D17A"><b>    100</b></font> | <font color="#E9AD0C"><b>                         </b></font> 
@@ -133,4 +139,10 @@ File                           | % Stmts | % Branch | % Funcs | % Lines | Uncove
 <font color="#E9AD0C"><b>  app.actions.ts              </b></font> | <font color="#E9AD0C"><b>     50</b></font> | <font color="#33D17A"><b>     100</b></font> | <font color="#F66151"><b>      0</b></font> | <font color="#E9AD0C"><b>     50</b></font> | <font color="#F66151"><b>7,17,27,37,47,55,65,75,85</b></font> 
 <font color="#F66151"><b>  app.reducer.ts              </b></font> | <font color="#F66151"><b>  30.76</b></font> | <font color="#F66151"><b>   18.18</b></font> | <font color="#33D17A"><b>    100</b></font> | <font color="#F66151"><b>  30.76</b></font> | <font color="#F66151"><b>23-46                    </b></font> 
 -------------------------------|---------|----------|---------|---------|---------------------------
+
+<b>Test Suites: </b><font color="#33D17A"><b>7 passed</b></font>, 7 total
+<b>Tests:       </b><font color="#33D17A"><b>9 passed</b></font>, 9 total
+<b>Snapshots:   </b>0 total
+<b>Time:</b>        3.511 s, estimated 4 s
+<font color="#717171">Ran all test suites.</font>
 </pre>

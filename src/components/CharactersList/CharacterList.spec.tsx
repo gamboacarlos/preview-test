@@ -12,8 +12,8 @@ test('CharacterList is rendering all passed elements', () => {
     <CharactersList characters={characterListMockData} loading={false} />,
     { wrapper: StoreWrapper }
   )
-  const list = screen.getAllByTestId('char-card')
-  expect(list.length).toEqual(6)
+  const cards = screen.getAllByTestId('char-card')
+  expect(cards.length).toEqual(6)
 })
 
 // Test ============================================================================

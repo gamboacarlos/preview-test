@@ -7,7 +7,7 @@ import styles from './CharactersList.module.scss'
 
 const CharactersList: FC<CharacterListProps> = ({ characters, loading }) => {
   return (
-    <div className={styles.listWrapper}>
+    <div className={styles.listWrapper} data-testid="char-list">
       {loading ? (
         <LoadingScreen />
       ) : (
