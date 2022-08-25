@@ -1,7 +1,7 @@
 import { AllDataAvailable } from '../types/commonTypes'
 
 // Base URL ========================================================================
-const baseUrl = import.meta.env.VITE_APP_BASE_URL
+const baseUrl = process.env.VITE_APP_BASE_URL
 
 // Fetcher =========================================================================
 const fetchData = async (

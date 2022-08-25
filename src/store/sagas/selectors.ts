@@ -1,4 +1,4 @@
 import { MainStore } from '../store'
 
 // State selectors ==============================================================
-export const currentOffset = (state: MainStore) => state.currentOffset
+export const currentOffset = (state: Partial<MainStore>) => state.currentOffset

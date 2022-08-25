@@ -1,10 +1,7 @@
 import { render } from '@testing-library/react'
 import '@testing-library/jest-dom'
 import CharacterCard from './CharacterCard'
-import {
-  singleCharacterMockData,
-  StoreWrapper,
-} from '../../helpers/testingHelpers'
+import { singleCharacterMockData, StoreWrapper } from '../../utils/testingUtils'
 
 // Test =====================================================================
 test('CharacterCard is displaying the passed data properly', () => {

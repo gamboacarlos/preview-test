@@ -2,10 +2,7 @@ import '@testing-library/jest-dom'
 import CharactersList from '../CharactersList/CharactersList'
 import { render, screen } from '@testing-library/react'
 import MainContainer from './MainContainer'
-import {
-  characterListMockData,
-  StoreWrapper,
-} from '../../helpers/testingHelpers'
+import { characterListMockData, StoreWrapper } from '../../utils/testingUtils'
 
 // Test ============================================================================
 test('MainContainer renders the passed component properly', () => {

@@ -5,7 +5,7 @@ import {
   mockQuote,
   singleCharacterMockData,
   StoreWrapper,
-} from '../../helpers/testingHelpers'
+} from '../../utils/testingUtils'
 
 // Test ============================================================================
 test('CharacterInfo component is rendering the passed data properly', () => {

@@ -1,9 +1,9 @@
 import { call, put, takeLatest, select } from 'redux-saga/effects'
 import { AnyAction } from 'redux'
 import { currentOffset } from './selectors'
-import fetchData from '../../helpers/fetchData'
+import fetchData from '../../utils/fetchData'
 import { CharacterData, CharacterQuote } from '../../types/commonTypes'
-import { formatStringForQuoteQuery } from '../../helpers/functions'
+import { formatStringForQuoteQuery } from '../../utils/functions'
 import {
   setCharacterQuote,
   setCharactersData,
@@ -17,7 +17,7 @@ import {
 } from '../reducer/actionTypes'
 
 // Fetch characters with pagination ===================================================
-function* fetchCharacters() {
+export function* fetchCharacters() {
   try {
     yield put(setLoading(true))
     // Get current offset from state

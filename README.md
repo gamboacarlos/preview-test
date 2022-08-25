@@ -101,6 +101,9 @@ npm run dev
 > 24/08/2022</br>
 > Inicio la refactorización en base a los tests creados.
 
+> 24/08/2022</br>
+> Añado tests unitarios a los actions generators del store incluyendo el tipado.
+
 </br>
 
 ## Test coverage

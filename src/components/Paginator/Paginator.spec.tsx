@@ -1,4 +1,4 @@
-import { StoreWrapper } from '../../helpers/testingHelpers'
+import { StoreWrapper } from '../../utils/testingUtils'
 import { render, screen } from '@testing-library/react'
 import '@testing-library/jest-dom'
 import Paginator from './Paginator'

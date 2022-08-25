@@ -1,10 +1,7 @@
 import '@testing-library/jest-dom'
 import CharactersList from '../CharactersList/CharactersList'
 import { render, screen } from '@testing-library/react'
-import {
-  characterListMockData,
-  StoreWrapper,
-} from '../../helpers/testingHelpers'
+import { characterListMockData, StoreWrapper } from '../../utils/testingUtils'
 import Layout from './Layout'
 
 // Test ============================================================================

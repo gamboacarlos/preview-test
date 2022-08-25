@@ -1,6 +1,6 @@
 import { render, screen } from '@testing-library/react'
 import '@testing-library/jest-dom'
-import { StoreWrapper } from '../../helpers/testingHelpers'
+import { StoreWrapper } from '../../utils/testingUtils'
 import NavBar from './NavBar'
 
 // Test ============================================================================

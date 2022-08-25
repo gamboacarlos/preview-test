@@ -1,10 +1,7 @@
 import { render, screen } from '@testing-library/react'
 import '@testing-library/jest-dom'
 import CharactersList from './CharactersList'
-import {
-  characterListMockData,
-  StoreWrapper,
-} from '../../helpers/testingHelpers'
+import { characterListMockData, StoreWrapper } from '../../utils/testingUtils'
 
 // Test ============================================================================
 test('CharacterList is rendering all passed elements', () => {

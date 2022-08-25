@@ -1,6 +1,6 @@
 import { FC } from 'react'
 import { useTranslation } from 'react-i18next'
-import { formatInfoArray } from '../../helpers/functions'
+import { formatInfoArray } from '../../utils/functions'
 import { CharacterInfoProps } from '../../types/commonTypes'
 import styles from './CharacterInfo.module.scss'
 
