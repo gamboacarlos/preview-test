@@ -1,9 +1,9 @@
-import { call, put, takeLatest, select } from 'redux-saga/effects'
-import { AnyAction } from 'redux'
-import { currentOffset } from './selectors'
-import fetchData from '../../utils/fetchData'
 import { CharacterData, CharacterQuote } from '../../types/commonTypes'
+import { call, put, takeLatest, select } from 'redux-saga/effects'
 import { formatStringForQuoteQuery } from '../../utils/functions'
+import fetchData from '../../utils/fetchData'
+import { currentOffset } from './selectors'
+import { AnyAction } from 'redux'
 import {
   setCharacterQuote,
   setCharactersData,

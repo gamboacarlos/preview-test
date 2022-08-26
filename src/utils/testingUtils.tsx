@@ -1,12 +1,11 @@
 import { Provider } from 'react-redux'
-import { createStore } from 'redux'
 import { BrowserRouter as Router } from 'react-router-dom'
 import { FC, ReactNode } from 'react'
-import appReducer from '../store/reducer/app.reducer'
 import '../i18n'
 import '../globalStyles/main.scss'
+import mainStore from '../store/store'
 
-export const store = createStore(appReducer)
+export const store = mainStore
 
 // Store & Router wrapper ===============================================================
 export const StoreWrapper: FC<{ children: ReactNode }> = ({ children }) => (
@@ -23,8 +22,8 @@ export const singleCharacterMockData = {
   name: 'Walter White',
   birthday: '09-07-1958',
   occupation: ['High School Chemistry Teacher', 'Meth King Pin'],
-  img: 'https://images.amcnetworks.com/amc.com/wp-content/uploa...',
-  status: 'Deceased',
+  img: 'https://images.amcnetworks.com/amc.com/wp-content/uploads/2015/04/cast_bb_700x1000_walter-white-lg.jpg',
+  status: 'Presumed dead',
   appearance: [1, 2, 3, 4, 5],
   nickname: 'Heisenberg',
   portrayed: 'Bryan Cranston',

@@ -1,12 +1,10 @@
-import { AllDataAvailable } from '../types/commonTypes'
+import 'isomorphic-fetch'
 
 // Base URL ========================================================================
-const baseUrl = process.env.VITE_APP_BASE_URL
+const baseUrl = 'https://www.breakingbadapi.com/api/'
 
 // Fetcher =========================================================================
-const fetchData = async (
-  key: string
-): Promise<AllDataAvailable | undefined> => {
+const fetchData = async (key: string) => {
   try {
     const response = await fetch(`${baseUrl as string}${key}`)
     const data = await response.json()
