@@ -2,14 +2,6 @@ import * as actionTypes from './actionTypes'
 import * as reducerTypes from '../../types/reducerTypes'
 import { CharacterData } from '../../types/commonTypes'
 
-// Start characters data fetch =====================================================
-export const startDataFetch = (): reducerTypes.ActionStartDataFetch => {
-  return {
-    type: actionTypes.START_DATA_FETCH,
-    payload: null,
-  }
-}
-
 // Set all characters data =========================================================
 export const setCharactersData = (
   data: CharacterData[]
@@ -30,16 +22,6 @@ export const setCurrentCharacterData = (
   }
 }
 
-// Start specific character data fetch =============================================
-export const startSpecificCharacterFetch = (
-  char: number
-): reducerTypes.ActionStartSpecificCharacterFetch => {
-  return {
-    type: actionTypes.START_SPECIFIC_CHARACTER_DATA_FETCH,
-    payload: char,
-  }
-}
-
 // Set character quote ==============================================================
 export const setCharacterQuote = (
   quote: string
@@ -47,14 +29,6 @@ export const setCharacterQuote = (
   return {
     type: actionTypes.SET_CHARACTER_QUOTE,
     payload: quote,
-  }
-}
-
-// Set loading =====================================================================
-export const setLoading = (loading: boolean): reducerTypes.ActionSetLoading => {
-  return {
-    type: actionTypes.SET_LOADING,
-    payload: loading,
   }
 }
 
@@ -85,5 +59,31 @@ export const setCurrentLanguage = (
   return {
     type: actionTypes.SET_CURRENT_LANGUAGE,
     payload: lang,
+  }
+}
+
+// Set loading =====================================================================
+export const setLoading = (loading: boolean): reducerTypes.ActionSetLoading => {
+  return {
+    type: actionTypes.SET_LOADING,
+    payload: loading,
+  }
+}
+
+// Start characters data fetch =====================================================
+export const startDataFetch = (): reducerTypes.ActionStartDataFetch => {
+  return {
+    type: actionTypes.START_DATA_FETCH,
+    payload: null,
+  }
+}
+
+// Start specific character data fetch =============================================
+export const startSpecificCharacterFetch = (
+  char: number
+): reducerTypes.ActionStartSpecificCharacterFetch => {
+  return {
+    type: actionTypes.START_SPECIFIC_CHARACTER_DATA_FETCH,
+    payload: char,
   }
 }

@@ -1,4 +1,4 @@
-export const formatStringForQuoteQuery = (name: string) =>
+export const formatStringForQuoteQuery = (name: string): string =>
   name.replace(' ', '+')
 
-export const formatInfoArray = (arr: string[] | number[]) => arr.join(', ')
+export const formatInfoArray = <T>(arr: T[]) => arr.join(', ')
