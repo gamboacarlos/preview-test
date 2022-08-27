@@ -117,7 +117,7 @@ npm run dev
 <pre>-------------------------------|---------|----------|---------|---------|-------------------
 File                           | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
 -------------------------------|---------|----------|---------|---------|-------------------
-<font color="#33D17A"><b>All files                     </b></font> | <font color="#33D17A"><b>  82.17</b></font> | <font color="#E9AD0C"><b>      60</b></font> | <font color="#33D17A"><b>  87.17</b></font> | <font color="#33D17A"><b>   82.4</b></font> | <font color="#F66151"><b>                 </b></font> 
+<font color="#33D17A"><b>All files                     </b></font> | <font color="#33D17A"><b>  84.49</b></font> | <font color="#E9AD0C"><b>      72</b></font> | <font color="#33D17A"><b>  87.17</b></font> | <font color="#33D17A"><b>   84.8</b></font> | <font color="#F66151"><b>                 </b></font> 
 <font color="#33D17A"><b> src                          </b></font> | <font color="#33D17A"><b>    100</b></font> | <font color="#33D17A"><b>     100</b></font> | <font color="#33D17A"><b>    100</b></font> | <font color="#33D17A"><b>    100</b></font> | <font color="#E9AD0C"><b>                 </b></font> 
 <font color="#33D17A"><b>  i18n.ts                     </b></font> | <font color="#33D17A"><b>    100</b></font> | <font color="#33D17A"><b>     100</b></font> | <font color="#33D17A"><b>    100</b></font> | <font color="#33D17A"><b>    100</b></font> | <font color="#E9AD0C"><b>                 </b></font> 
 <font color="#33D17A"><b> src/components/CharacterCard </b></font> | <font color="#33D17A"><b>     80</b></font> | <font color="#33D17A"><b>     100</b></font> | <font color="#E9AD0C"><b>     50</b></font> | <font color="#33D17A"><b>     80</b></font> | <font color="#F66151"><b>                 </b></font> 
@@ -142,10 +142,10 @@ File                           | % Stmts | % Branch | % Funcs | % Lines | Uncove
 <font color="#33D17A"><b>  useAppReducer.tsx           </b></font> | <font color="#33D17A"><b>     90</b></font> | <font color="#33D17A"><b>     100</b></font> | <font color="#E9AD0C"><b>     75</b></font> | <font color="#33D17A"><b>  94.44</b></font> | <font color="#F66151"><b>50               </b></font> 
 <font color="#33D17A"><b> src/store                    </b></font> | <font color="#33D17A"><b>    100</b></font> | <font color="#33D17A"><b>     100</b></font> | <font color="#33D17A"><b>    100</b></font> | <font color="#33D17A"><b>    100</b></font> | <font color="#E9AD0C"><b>                 </b></font> 
 <font color="#33D17A"><b>  store.ts                    </b></font> | <font color="#33D17A"><b>    100</b></font> | <font color="#33D17A"><b>     100</b></font> | <font color="#33D17A"><b>    100</b></font> | <font color="#33D17A"><b>    100</b></font> | <font color="#E9AD0C"><b>                 </b></font> 
-<font color="#33D17A"><b> src/store/reducer            </b></font> | <font color="#33D17A"><b>   87.5</b></font> | <font color="#E9AD0C"><b>   54.54</b></font> | <font color="#33D17A"><b>    100</b></font> | <font color="#33D17A"><b>   87.5</b></font> | <font color="#F66151"><b>                 </b></font> 
+<font color="#33D17A"><b> src/store/reducer            </b></font> | <font color="#33D17A"><b>     95</b></font> | <font color="#33D17A"><b>   81.81</b></font> | <font color="#33D17A"><b>    100</b></font> | <font color="#33D17A"><b>     95</b></font> | <font color="#F66151"><b>                 </b></font> 
 <font color="#33D17A"><b>  actionTypes.ts              </b></font> | <font color="#33D17A"><b>    100</b></font> | <font color="#33D17A"><b>     100</b></font> | <font color="#33D17A"><b>    100</b></font> | <font color="#33D17A"><b>    100</b></font> | <font color="#E9AD0C"><b>                 </b></font> 
 <font color="#33D17A"><b>  app.actions.ts              </b></font> | <font color="#33D17A"><b>    100</b></font> | <font color="#33D17A"><b>     100</b></font> | <font color="#33D17A"><b>    100</b></font> | <font color="#33D17A"><b>    100</b></font> | <font color="#E9AD0C"><b>                 </b></font> 
-<font color="#E9AD0C"><b>  app.reducer.ts              </b></font> | <font color="#E9AD0C"><b>  61.53</b></font> | <font color="#E9AD0C"><b>   54.54</b></font> | <font color="#33D17A"><b>    100</b></font> | <font color="#E9AD0C"><b>  61.53</b></font> | <font color="#F66151"><b>23-38            </b></font> 
+<font color="#33D17A"><b>  app.reducer.ts              </b></font> | <font color="#33D17A"><b>  84.61</b></font> | <font color="#33D17A"><b>   81.81</b></font> | <font color="#33D17A"><b>    100</b></font> | <font color="#33D17A"><b>  84.61</b></font> | <font color="#F66151"><b>44-46            </b></font> 
 <font color="#F66151"><b> src/store/sagas              </b></font> | <font color="#F66151"><b>  38.09</b></font> | <font color="#F66151"><b>       0</b></font> | <font color="#E9AD0C"><b>     75</b></font> | <font color="#F66151"><b>     35</b></font> | <font color="#F66151"><b>                 </b></font> 
 <font color="#F66151"><b>  appSaga.tsx                 </b></font> | <font color="#F66151"><b>  31.57</b></font> | <font color="#F66151"><b>       0</b></font> | <font color="#E9AD0C"><b>  66.66</b></font> | <font color="#F66151"><b>  31.57</b></font> | <font color="#F66151"><b>30-67            </b></font> 
 <font color="#33D17A"><b>  selectors.ts                </b></font> | <font color="#33D17A"><b>    100</b></font> | <font color="#33D17A"><b>     100</b></font> | <font color="#33D17A"><b>    100</b></font> | <font color="#33D17A"><b>    100</b></font> | <font color="#E9AD0C"><b>                 </b></font> 
@@ -155,9 +155,9 @@ File                           | % Stmts | % Branch | % Funcs | % Lines | Uncove
 <font color="#33D17A"><b>  testingUtils.tsx            </b></font> | <font color="#33D17A"><b>    100</b></font> | <font color="#33D17A"><b>     100</b></font> | <font color="#33D17A"><b>    100</b></font> | <font color="#33D17A"><b>    100</b></font> | <font color="#E9AD0C"><b>                 </b></font> 
 -------------------------------|---------|----------|---------|---------|-------------------
 
-<b>Test Suites: </b><font color="#33D17A"><b>11 passed</b></font>, 11 total
-<b>Tests:       </b><font color="#33D17A"><b>24 passed</b></font>, 24 total
+<b>Test Suites: </b><font color="#33D17A"><b>12 passed</b></font>, 12 total
+<b>Tests:       </b><font color="#33D17A"><b>32 passed</b></font>, 32 total
 <b>Snapshots:   </b>0 total
-<b>Time:</b>        5.689 s
+<b>Time:</b>        <font color="#E9AD0C"><b>6.518 s</b></font>
 <font color="#717171">Ran all test suites.</font>
 </pre>
