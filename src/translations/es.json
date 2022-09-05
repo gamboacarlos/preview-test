@@ -11,5 +11,9 @@
     "bcsAppearance": "Apariciones en Better Call Saul (temporadas): ",
     "category": "Categoria: ",
     "quote": "Frase: "
+  },
+  "navBar": {
+    "en": "Ingles",
+    "es": "Español"
   }
 }

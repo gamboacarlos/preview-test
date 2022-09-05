@@ -1,4 +1,5 @@
 import { FC } from 'react'
+import { useTranslation } from 'react-i18next'
 import { Link } from 'react-router-dom'
 import useAppReducer from '../../hooks/useAppReducer'
 import styles from './NavBar.module.scss'
@@ -6,6 +7,7 @@ import styles from './NavBar.module.scss'
 const NavBar: FC = () => {
   // Hooks ===========================================================================
   const { currentLanguage, handleChangeLanguage } = useAppReducer()
+  const { t } = useTranslation()
 
   return (
     <div className={styles.NavBarWrapper}>
@@ -29,7 +31,7 @@ const NavBar: FC = () => {
             }
             onClick={() => handleChangeLanguage('es')}
           >
-            Spanish
+            {t('navBar.es')}
           </button>
           <button
             data-testid="lang-button-en"
@@ -40,7 +42,7 @@ const NavBar: FC = () => {
             }
             onClick={() => handleChangeLanguage('en')}
           >
-            English
+            {t('navBar.en')}
           </button>
         </div>
       </div>

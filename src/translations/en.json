@@ -11,5 +11,9 @@
     "bcsAppearance": "Better Call Saul appearance (seasons): ",
     "category": "Category: ",
     "quote": "Quote: "
+  },
+  "navBar": {
+    "en": "English",
+    "es": "Spanish"
   }
 }

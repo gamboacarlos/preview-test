@@ -5,11 +5,9 @@ import mainStore from './store/store'
 
 const App: FC = (): JSX.Element => {
   return (
-    <>
-      <Provider store={mainStore}>
-        <MainRoutes />
-      </Provider>
-    </>
+    <Provider store={mainStore}>
+      <MainRoutes />
+    </Provider>
   )
 }
 
