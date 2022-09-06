@@ -1,12 +1,12 @@
 import * as actionTypes from './actionTypes'
-import * as reducerTypes from '../../types/reducerTypes'
-import { CharacterData } from '../../types/commonTypes'
+import * as reducerTypes from '../../../types/reducerTypes'
+import { CharacterData } from '../../../types/commonTypes'
 import '@testing-library/jest-dom'
 import {
   characterListMockData,
   mockQuote,
   singleCharacterMockData,
-} from '../../utils/testingUtils'
+} from '../../../utils/testingUtils'
 import {
   setCharacterQuote,
   setCharactersData,

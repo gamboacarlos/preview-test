@@ -1,4 +1,4 @@
-import * as actionTypes from './actionTypes'
+import * as actionTypes from './actions/actionTypes'
 import * as reducerTypes from '../../types/reducerTypes'
 import { CharacterData } from '../../types/commonTypes'
 

@@ -1,6 +1,6 @@
 import * as actionTypes from './actionTypes'
-import * as reducerTypes from '../../types/reducerTypes'
-import { CharacterData } from '../../types/commonTypes'
+import * as reducerTypes from '../../../types/reducerTypes'
+import { CharacterData } from '../../../types/commonTypes'
 
 // Set all characters data =========================================================
 export const setCharactersData = (

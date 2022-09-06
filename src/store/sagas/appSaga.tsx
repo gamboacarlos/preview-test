@@ -1,7 +1,7 @@
 import { CharacterData, CharacterQuote } from '../../types/commonTypes'
 import { call, put, takeLatest, select } from 'redux-saga/effects'
 import { formatStringForQuoteQuery } from '../../utils/functions'
-import fetchData from '../../utils/fetchData'
+import fetchData from '../../utils/fetchData/fetchData'
 import { currentOffset } from './selectors'
 import { AnyAction } from 'redux'
 import {
@@ -9,12 +9,12 @@ import {
   setCharactersData,
   setCurrentCharacterData,
   setLoading,
-} from '../reducer/app.actions'
+} from '../reducer/actions/app.actions'
 import {
   START_DATA_FETCH,
   SET_CURRENT_OFFSET,
   START_SPECIFIC_CHARACTER_DATA_FETCH,
-} from '../reducer/actionTypes'
+} from '../reducer/actions/actionTypes'
 
 // Fetch characters with pagination ===================================================
 export function* fetchCharacters() {
