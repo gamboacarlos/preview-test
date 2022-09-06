@@ -41,7 +41,100 @@ npm run dev
 
 <br />
 
+# Estructura del proyecto
+
+Este proyecto fue creado utilizando una estructura por tipo de fichero ya que es un proyecto sencillo, esta estructura permite hacer una separación entre los componentes y las vistas. Cada componente esta dentro de una carpeta con su respectivo nombre, estilos y tests, se aplica la misma estructura para los hooks.
+
+## Estructura de carpetas
+
+<br />
+
+```
+react-app/
+├── src/
+│   ├── components/
+│   │   ├── CharacterCard/
+│   │   ├── CharacterDescription/
+│   │   ├── CharacterInfo/
+│   │   ├── CharactersList/
+│   │   ├── Footer/
+│   │   ├── Layout/
+│   │   ├── LoadingScreen/
+│   │   ├── MainContainer/
+│   │   ├── NavBar/
+│   │   └── Paginator/
+│   ├── hooks/
+│   │   ├── useData/
+│   │   ├── usePagination/
+│   │   └── useTranslator/
+│   ├── store/
+│   │   ├── reducer/
+│   │   └── sagas/
+│   ├── globalStyles/
+│   ├── routes/
+│   ├── translations/
+│   ├── types/
+│   ├── utils/
+│   ├── views/
+│   ├── App.tsx
+│   └── main.tsx
+├── .babelrc
+├── .eslintrc.cjs
+├── .gitignore
+├── .prettierrc
+├── index.html
+├── package.json
+├── README.md
+├── tsconfig.json
+├── tsconfig.node.json
+└── vite.config.ts
+
+```
+
+<br />
+
+## Estructura de componentes
+
+<br />
+
+```
+└─ src/
+   ├── components/
+   │   ├── CharacterCard/
+   │   │   ├── CharacterCard.module.scss
+   │   │   ├── CharacterCard.spec.tsx
+   │   │   └── CharacterCard.tsx
+```
+
+<br />
+
+## Estructura de hooks
+
+<br />
+
+```
+└─ src/
+   ├── hooks/
+   │   ├── useData/
+   │   │   ├── useData.spec.ts
+   │   │   └── useData.tsx
+
+```
+
+# Arquitectura
+
+Definire una arquitectura React-Redux. He decidido usar Redux para el manejo del estado y Redux-Saga como middleware para comunicarme con la API, Redux-Saga me permitira un mejor control de la comunicación asincrona y manejo de errores.
+
+<br />
+
+<img src='./src/assets/img/arquitectura.svg' alt='arquitectura' width='700px' />
+
+<br />
+
 ## Memorias
+
+> 22/08/2022</br>
+> Para esta aplicación usare Vite en lugar de Create React App, principalmente por dos razones, practicamente no necesita configuración y me permitira levantar un servidor de desarrollo de carga muy rapida ya que trabaja directamente con ES Modules. Tambien tiene soporte nativo para TypeScript.
 
 > 22/08/2022</br>
 > Inicio el desarrollo de la aplicación, iniciando Git en el directorio raiz
@@ -56,7 +149,7 @@ npm run dev
     - sass
 
 > 22/08/2022</br>
-> He decidido usar Redux para el manejo del estado y Redux-Saga para comunicarme con la API, Redux-Saga me permitira un mejor control de la comunicación asincrona y manejo de errores. Usare CSS modules para los estilos con Sass, con CSS modules se podran mantener los estilos aislados dentro de cada componente.
+> Usare CSS modules para los estilos con Sass, con CSS modules se podran mantener los estilos aislados dentro de cada componente.
 
 > 22/08/2022</br>
 > Decido usar la configuracion "Standard" para Eslint haciendo uso de "eslint-config-prettier" para que no colisione con Prettier y lo configuro en el archivo eslintrc:
@@ -96,7 +189,30 @@ npm run dev
 > Ya creada la vista principal de la aplicación defino su ruta en el componente MainRoutes haciendo uso de React Router.
 
 > 23/08/2022</br>
-> Creo el store de la aplicacion con un único reducer y las sagas correspondientes, he creado tambien un custom hook (useAppReducer) para despachar acciones y obtener lod datos del estado de una manera mas centralizada y manteniendo los componentes mas compactos y faciles de leer.
+> Creo el store de la aplicacion con un único reducer y las sagas correspondientes.
+
+```
+└─ src/
+   ├── store/
+   │   ├── reducer/
+   │   │   ├── actions/
+   │   │   └── app.reducer.ts
+   │   ├── sagas/
+   │   └── store.ts
+
+```
+
+> 23/08/2022</br>
+> He creado 3 custom hooks para despachar acciones y obtener los datos del estado: useData, usePagination y useTranslator, esto me va a permitir mantener los componentes mas compactos y faciles de leer.
+
+```
+└─ src/
+   ├── hooks/
+   │   ├── useData/
+   │   ├── usePagination/
+   │   └── useTranslator/
+
+```
 
 > 23/08/2022</br>
 > Decido añadir paginación a la vista principal para poder tener disponible todos los personajes sin tener que hacer un solo fetch tan pesado que comprometa el rendimiento de la app y generar asi una mejor experiencia de usuario, tambien creo una animación de carga que se mostrara mientras los elementos aun no esten disponibles.

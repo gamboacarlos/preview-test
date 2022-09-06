@@ -1,7 +1,7 @@
 import { Provider } from 'react-redux'
 import { BrowserRouter as Router } from 'react-router-dom'
 import { FC, ReactNode } from 'react'
-import '../i18n'
+import '../translations/i18n'
 import '../globalStyles/main.scss'
 import mainStore from '../store/store'
 
