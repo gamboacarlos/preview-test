@@ -1,13 +1,13 @@
 import Layout from '../components/Layout/Layout'
 import { useLocation } from 'react-router-dom'
-import useAppReducer from '../hooks/useAppReducer'
 import CharacterInfo from '../components/CharacterInfo/CharacterInfo'
 import { FC, useEffect } from 'react'
 import { CharacterData } from '../types/commonTypes'
 import LoadingScreen from '../components/LoadingScreen/LoadingScreen'
+import useData from '../hooks/useData/useData'
 
 const CharacterView: FC = () => {
-  // Hooks =================================================================
+  // Hooks =========================================================================
   const location = useLocation()
   const {
     currentCharacter,
@@ -15,14 +15,14 @@ const CharacterView: FC = () => {
     handleSetLoading,
     quote,
     loading,
-  } = useAppReducer()
+  } = useData()
 
   useEffect(() => {
     handleSetLoading(true)
     handleStartSpecificCharacterFetch(characterIdFromPathName)
   }, [])
 
-  // Constants =============================================================
+  // Constants =====================================================================
   const character = currentCharacter as CharacterData
   const characterIdFromPathName = Number(
     location.pathname.replace('/character/', '')

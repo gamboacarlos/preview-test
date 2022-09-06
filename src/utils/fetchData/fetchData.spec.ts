@@ -1,7 +1,7 @@
 import '@testing-library/jest-dom'
-import { CharacterData } from '../types/commonTypes'
+import { CharacterData } from '../../types/commonTypes'
 import fetchData from './fetchData'
-import { singleCharacterMockData } from './testingUtils'
+import { singleCharacterMockData } from '../testingUtils'
 
 // Test ====================================================================
 test('', async () => {

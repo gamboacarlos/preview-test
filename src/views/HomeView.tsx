@@ -1,11 +1,11 @@
 import { FC, useEffect } from 'react'
 import CharactersList from '../components/CharactersList/CharactersList'
 import Layout from '../components/Layout/Layout'
-import useAppReducer from '../hooks/useAppReducer'
+import useData from '../hooks/useData/useData'
 
 const HomeView: FC = () => {
   // Hooks =====================================================================
-  const { handleStartDataFetch, characters, loading } = useAppReducer()
+  const { handleStartDataFetch, characters, loading } = useData()
 
   useEffect(() => {
     handleStartDataFetch()

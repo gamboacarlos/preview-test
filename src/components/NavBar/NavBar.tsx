@@ -1,13 +1,11 @@
 import { FC } from 'react'
-import { useTranslation } from 'react-i18next'
 import { Link } from 'react-router-dom'
-import useAppReducer from '../../hooks/useAppReducer'
+import useTranslator from '../../hooks/useTranslator/useTranslator'
 import styles from './NavBar.module.scss'
 
 const NavBar: FC = () => {
   // Hooks ===========================================================================
-  const { currentLanguage, handleChangeLanguage } = useAppReducer()
-  const { t } = useTranslation()
+  const { currentLanguage, handleChangeLanguage, translate } = useTranslator()
 
   return (
     <div className={styles.NavBarWrapper}>
@@ -15,7 +13,6 @@ const NavBar: FC = () => {
         <Link to="/">
           <button className={styles.logoButton}>
             <img
-              style={{ height: '38px' }}
               src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Breaking_Bad_logo.svg/400px-Breaking_Bad_logo.svg.png"
               alt="logo"
             />
@@ -31,7 +28,7 @@ const NavBar: FC = () => {
             }
             onClick={() => handleChangeLanguage('es')}
           >
-            {t('navBar.es')}
+            {translate('navBar.es')}
           </button>
           <button
             data-testid="lang-button-en"
@@ -42,7 +39,7 @@ const NavBar: FC = () => {
             }
             onClick={() => handleChangeLanguage('en')}
           >
-            {t('navBar.en')}
+            {translate('navBar.en')}
           </button>
         </div>
       </div>

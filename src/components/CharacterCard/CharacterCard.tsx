@@ -1,6 +1,6 @@
 import { FC } from 'react'
-import { useTranslation } from 'react-i18next'
 import { useNavigate } from 'react-router-dom'
+import useTranslator from '../../hooks/useTranslator/useTranslator'
 import { CardCharacterData } from '../../types/commonTypes'
 import styles from './CharacterCard.module.scss'
 
@@ -12,7 +12,7 @@ const CharacterCard: FC<CardCharacterData> = ({
   nickname,
 }) => {
   // Hooks ===============================================================
-  const { t } = useTranslation()
+  const { translate } = useTranslator()
   const navigate = useNavigate()
 
   return (
@@ -26,11 +26,11 @@ const CharacterCard: FC<CardCharacterData> = ({
             <h3 data-testid="char-name">{name}</h3>
           </div>
           <p data-testid="card-nickname">
-            {t('characterInfo.nickname')}
+            {translate('characterInfo.nickname')}
             <span data-testid="char-nickname">{nickname}</span>
           </p>
           <p data-testid="card-status">
-            {t('characterInfo.status')}
+            {translate('characterInfo.status')}
             <span data-testid="char-status">{status}</span>
           </p>
         </div>

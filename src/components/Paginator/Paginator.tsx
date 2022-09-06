@@ -1,17 +1,14 @@
 import { FC } from 'react'
-import useAppReducer from '../../hooks/useAppReducer'
 import styles from './Paginator.module.scss'
 import { IoArrowBackCircle, IoArrowForwardCircle } from 'react-icons/io5'
+import usePagination from '../../hooks/usePagination/usePagination'
+import useData from '../../hooks/useData/useData'
 
 const Paginator: FC = () => {
   // Hooks =========================================================================
-  const {
-    currentPage,
-    currentOffset,
-    characters,
-    handleNextPage,
-    handlePreviousPage,
-  } = useAppReducer()
+  const { currentPage, currentOffset, handleNextPage, handlePreviousPage } =
+    usePagination()
+  const { characters } = useData()
 
   return (
     <div className={styles.paginatorWrapper}>

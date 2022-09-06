@@ -1,3 +1,5 @@
+import { ReactNode } from 'react'
+
 export interface CharacterData {
   char_id: number
   name: string
@@ -31,5 +33,10 @@ export interface CharacterInfoProps {
 export interface CharacterListProps {
   characters: CardCharacterData[]
   loading: boolean
+}
+export interface CharacterDescriptionProps {
+  children: ReactNode
+  name: string
+  testId?: string
 }
 export type AllDataAvailable = CharacterData | CharacterData[] | CharacterQuote

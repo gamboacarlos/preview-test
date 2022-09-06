@@ -1,7 +1,7 @@
 import { FC } from 'react'
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
-import CharacterView from '../Views/CharacterView'
-import HomeView from '../Views/HomeView'
+import CharacterView from '../views/CharacterView'
+import HomeView from '../views/HomeView'
 
 const MainRoutes: FC = () => {
   return (

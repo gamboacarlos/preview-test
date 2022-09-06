@@ -1,13 +1,10 @@
 import { FC } from 'react'
-import { useTranslation } from 'react-i18next'
 import { formatInfoArray } from '../../utils/functions'
 import { CharacterInfoProps } from '../../types/commonTypes'
 import styles from './CharacterInfo.module.scss'
+import CharacterDescription from '../CharacterDescription/CharacterDescription'
 
 const CharacterInfo: FC<CharacterInfoProps> = ({ character, quote }) => {
-  // Hooks ======================================================================
-  const { t } = useTranslation()
-
   // Constatnts =================================================================
   const {
     char_id: id,
@@ -30,49 +27,35 @@ const CharacterInfo: FC<CharacterInfoProps> = ({ character, quote }) => {
       </div>
       <div className={styles.infoBody}>
         <h2 data-testid="info-name">{name}</h2>
-        <p>
-          {t('characterInfo.nickname')}
-          <span>{nickname}</span>
-        </p>
-        <p>
-          {t('characterInfo.id')}
-          <span>{id}</span>
-        </p>
-        <p>
-          {t('characterInfo.birthday')} <span>{birthday}</span>
-        </p>
+        <CharacterDescription name="nickname">{nickname}</CharacterDescription>
+        <CharacterDescription name="id">{id}</CharacterDescription>
+        <CharacterDescription name="birthday">{birthday}</CharacterDescription>
         <div className={styles.occupationInfo}>
-          <p>
-            {t('characterInfo.occupation')}
-            <span>{formatInfoArray(occupation)}</span>
-          </p>
+          <CharacterDescription name="occupation">
+            {formatInfoArray(occupation)}
+          </CharacterDescription>
         </div>
-        <p>
-          {t('characterInfo.appearance')}
-          <span>{formatInfoArray(appearance)}</span>
-        </p>
-        <p>
-          {t('characterInfo.status')}
-          <span data-testid="info-status">{status}</span>
-        </p>
-        <p>
-          {t('characterInfo.portrayed')} <span>{portrayed}</span>
-        </p>
-        <p>
-          {t('characterInfo.category')}
-          <span data-testid="info-category">{category}</span>
-        </p>
+        <CharacterDescription name="appearance">
+          {formatInfoArray(appearance)}
+        </CharacterDescription>
+        <CharacterDescription name="status" testId="info-status">
+          {status}
+        </CharacterDescription>
+        <CharacterDescription name="portrayed">
+          {portrayed}
+        </CharacterDescription>
+        <CharacterDescription name="category" testId="info-category">
+          {category}
+        </CharacterDescription>
         {bcsAppearance.length >= 1 ? (
-          <p>
-            {t('characterInfo.bcsAppearance')}
-            <span>{formatInfoArray(bcsAppearance)}</span>
-          </p>
+          <CharacterDescription name="bcsAppearance">
+            {formatInfoArray(bcsAppearance)}
+          </CharacterDescription>
         ) : null}
         <div className={styles.infoQuote}>
-          <p>
-            {t('characterInfo.quote')}{' '}
-            <span data-testid="info-quote">{quote}</span>
-          </p>
+          <CharacterDescription name="quote" testId="info-quote">
+            {quote}
+          </CharacterDescription>
         </div>
       </div>
     </div>
