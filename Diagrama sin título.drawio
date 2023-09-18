@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-09-18T14:33:41.155Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/117.0" etag="24d0QiMmRo-4v0zWjPpT" version="21.7.5" type="github">
+<mxfile host="app.diagrams.net" modified="2023-09-18T14:45:48.545Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/117.0" etag="9THuNBFE5eRnj10FR4WV" version="21.7.5" type="github">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
     <mxGraphModel dx="1434" dy="774" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="2336" pageHeight="1654" math="0" shadow="0">
       <root>
@@ -91,7 +91,7 @@
         <mxCell id="pCUGQhPCe7q9vCgeICrw-13" value="useMasterListQuery" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;arcSize=10;fillColor=#d5e8d4;strokeColor=#82b366;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
           <mxGeometry x="1010" y="943" width="180" height="50" as="geometry" />
         </mxCell>
-        <mxCell id="pCUGQhPCe7q9vCgeICrw-14" value="useDetailQueryMaster" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;arcSize=10;fillColor=#d5e8d4;strokeColor=#82b366;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+        <mxCell id="pCUGQhPCe7q9vCgeICrw-14" value="useMasterDetailQuery" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;arcSize=10;fillColor=#d5e8d4;strokeColor=#82b366;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
           <mxGeometry x="1530" y="943" width="160" height="50" as="geometry" />
         </mxCell>
         <mxCell id="pCUGQhPCe7q9vCgeICrw-15" value="" style="endArrow=classic;html=1;rounded=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="pCUGQhPCe7q9vCgeICrw-14" target="pCUGQhPCe7q9vCgeICrw-9" edge="1">
